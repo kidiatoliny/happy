@@ -1,9 +1,19 @@
 import React from 'react';
-
-import {  Container, ContentWrapper,Location, Logo, Main, SubTitle, Title} from './styles';
-import logo from './../../assets/Logo.svg'
-import {FiArrowRight} from 'react-icons/fi'
 import { Link } from 'react-router-dom';
+
+import {
+  Container,
+  ContentWrapper,
+  Location,
+  Logo,
+  Main,
+  SubTitle,
+  Title
+} from './styles';
+
+import logo from './../../assets/Logo.svg'
+
+import {FiArrowRight} from 'react-icons/fi'
  const Landing: React.FC = () => {
    return (
      <Container>
