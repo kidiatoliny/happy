@@ -1,8 +1,9 @@
 import React from 'react';
 
-import {  Container, ContentWrapper, Icon, Location, Logo, Main, SubTitle, Title} from './styles';
+import {  Container, ContentWrapper,Location, Logo, Main, SubTitle, Title} from './styles';
 import logo from './../../assets/Logo.svg'
 import {FiArrowRight} from 'react-icons/fi'
+import { Link } from 'react-router-dom';
  const Landing: React.FC = () => {
    return (
      <Container>
@@ -20,9 +21,9 @@ import {FiArrowRight} from 'react-icons/fi'
             <strong>Mindelo</strong>
             <span>Alto Miramar</span>
         </Location>
-        <Icon href="#">
+        <Link to="/app">
           <FiArrowRight size={26} color='rgba(0,0,0,0.6)'/>
-        </Icon>
+        </Link>
 
        </ContentWrapper>
 

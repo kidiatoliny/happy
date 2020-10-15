@@ -25,7 +25,24 @@ export const ContentWrapper = styled.div`
   background:url(${bg})
     no-repeat
     80%
-    center
+    center;
+
+    a{
+            position:absolute;
+            right:0;
+            bottom:0 ;
+            width:80px;
+            height:80px;
+            background:#ffd666;
+            border-radius:30px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            transition: background-color 0.2s;
+            &:hover{
+              background:#96feff
+            }
+    }
 
 `
 export const Main = styled.div`
@@ -54,23 +71,6 @@ text-align:right;
 flex-direction:column;
 strong{
   font-weight:800;
-}
-
-`
-export const Icon = styled.a`
-position:absolute;
-right:0;
-bottom:0 ;
-width:80px;
-height:80px;
-background:#ffd666;
-border-radius:30px;
-display:flex;
-justify-content:center;
-align-items:center;
-transition: background-color 0.2s;
-&:hover{
-  background:#96feff
 }
 
 `
